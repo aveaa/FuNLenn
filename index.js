@@ -1,10 +1,17 @@
 const Discord = require("discord.js");
-const bot = new Discord.Client();
+const client = new Discord.Client();
 
-bot.on("ready", () => {
-  console.log(`{bot.user.username} is online!`);
+client.on('ready', () => {
+    console.log(`Logged in as ${client.user.tag}!`);
 });
 
-//build failed
+client.on('message', msg => {
+    if (msg.content === 'ping') {
+    msg.reply('pong');
+}
+if (msg.content === 'FN!Flimeus') {
+    msg.reply('Твич Флейма https://www.twitch.tv/flimeus\n Ютуб Флейма https://www.youtube.com/channel/UCp_yHWYMIXXQ8LFDdM5Q0SQ ');
+}
+});
 
-bot.login(process.env.BOT_TOKEN);
+client.login(process.env.BOT_TOKEN);
