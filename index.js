@@ -1,4 +1,4 @@
-//
+*//
 
 const Discord = require("discord.js");
 
@@ -31,7 +31,7 @@ if (message.content === 'FN!Flimeus') {
 
 const embed = new Discord.RichEmbed()
 .setColor (0xff0000)
-.setTitle (`**Полезные ссылки`)
+.setTitle (`**Полезные ссылки**`)
 .addField (`FN!Flimeus`)
 .setField (`**Твич Флейма**`,`https://www.twitch.tv/flimeus`)
 .setField (`**Ютуб Флейма**`, `: https://www.youtube.com/channel/UCp_yHWYMIXXQ8LFDdM5Q0SQ`)
