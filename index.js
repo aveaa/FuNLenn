@@ -15,7 +15,7 @@ if (msg.content === 'FN!Flimeus') {
     msg.channel.send({
         embed: {
             color: 0xff0000,
-            title: msg.author.tag,
+            title: "Полезные ссылки",
             fields: [
                 {
                     name: 'Твич Флейма',
