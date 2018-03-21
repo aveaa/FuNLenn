@@ -7,4 +7,4 @@ bot.on("ready", () => {
 
 //build failed
 
-client.login(process.env.BOT_TOKEN);
+bot.login(process.env.BOT_TOKEN);
