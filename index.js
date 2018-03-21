@@ -1,3 +1,4 @@
+
 //
 
 const Discord = require("discord.js");
@@ -34,6 +35,7 @@ const embed = new Discord.RichEmbed()
 .setTitle (`**Полезные ссылки**`)
 .addField (`**Твич Флейма**`,`https://www.twitch.tv/flimeus`)
 .addField (`**Ютуб Флейма**`,`https://www.youtube.com/channel/UCp_yHWYMIXXQ8LFDdM5Q0SQ`)
+.addField (`**Группа Флейма в ВК**`,`https://vk.com/flimeusoffical`)
 .setThumbnail (`https://media.discordapp.net/attachments/418113340871540746/426018657009926144/unknown.png`)
 .setTimestamp (new Date())
 
