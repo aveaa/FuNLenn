@@ -1,5 +1,6 @@
 
 
+
 //
 
 const Discord = require("discord.js");
@@ -39,6 +40,7 @@ const embed = new Discord.RichEmbed()
 .addField (`**Группа Флейма в ВК**`,`https://vk.com/flimeusoffical`)
 .addField (`**Правила На стримах**`,`https://vk.com/flimeusoffical?w=wall-112110355_3223`)
 .setThumbnail (`https://media.discordapp.net/attachments/418113340871540746/426018657009926144/unknown.png`)
+.setFooter(`© Powered by FuNLenny`)
 .setTimestamp (new Date())
 
 message.channel.send({embed});
