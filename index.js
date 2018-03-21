@@ -4,7 +4,6 @@ const Discord = require("discord.js");
 
 const client = new Discord.Client();
 
-if (msg.content === 'FN!Flimeus') {
 
 client.on('ready', () => {
 
@@ -16,14 +15,14 @@ client.on('ready', () => {
 
 client.on('message', msg => {
 
-    if (msg.content === 'ping') {
+    if (message.content === 'ping') {
 
-    msg.reply('pong');
+    message.reply('pong');
 
 }
 
 
-
+if (message.content === 'FN!Flimeus') {
 
 const embed = new Discord.RichEmbed()
 .setColor (#ff0000)
