@@ -30,7 +30,7 @@ client.on('message', message => {
 }
 
 
-if (message.content === 'FN!Flimeus') {
+if (message.content === 'FN!Info') {
 
 const embed = new Discord.RichEmbed()
 .setColor (0xff0000)
