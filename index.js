@@ -26,7 +26,7 @@ fs.readdir("./commands/", (err, files) => {
 });
 
 
-let userData = JSON.parse(fs.readFileSync('Storage/userData.json', 'utf8'));
+let userData = JSON.parse(fs.readFileSync('userData.json', 'utf8'));
 
 const logger = require('./logger');
 
