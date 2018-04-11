@@ -8,7 +8,9 @@
   "author": "FuNLenny",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^11.3.2"
+    "discord.js": "^11.3.2",
+    "ignore-case": "^0.1.0",
+    "moment": "^2.22.0"
   },
   "devDependencies": {},
   "description": "FlimeUSBot"
