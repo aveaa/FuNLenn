@@ -5,28 +5,9 @@ const bot = new Discord.Client();
 bot.commands = new Discord.Collection();
 const moment = require('moment');
 
-fs.readdir("./commands/", (err, files) => {
 
 
-  if(err) console.log(err);
-  let jsfile = files.filter(f => f.split(".").pop() === "js")
-  if(jsfile.length <= 0){
-    console.log("Couldn't find commands.");
-    return;
-
-  }
-
-
-  jsfile.forEach((f, i) =>{
-    let props = require(`./commands/${f}`);
-    console.log(`${f} loaded!`);
-    bot.commands.set(props.help.name, props);
-
-  });
-});
-
-
-let userData = JSON.parse(fs.readFileSync('userData.json', 'utf8'));
+let userData = JSON.parse(fs.readFileSync('Storage/userData.json', 'utf8'));
 
 const logger = require('./logger');
 
@@ -275,4 +256,4 @@ if (message.content === 'p!poka') {
 
 
 });
-client.login(process.env.BOT_TOKEN);
+client.login(process.env.BOT_TOKEN)
