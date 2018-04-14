@@ -205,4 +205,4 @@ if (message.content.startsWith(`${prefix}random`)) {
   }
 
 });
-bot.login("NDM0NjA3NTMxMDg4OTM2OTYw.DbM3Uw.tyHq5WdsPprwNZmOFpCLHlsHaQA");
+client.login(process.env.BOT_TOKEN)
