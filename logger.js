@@ -36,7 +36,7 @@ delete: function(msg, bot) {
 
    });
 
-  bot.channels.get('432197641271509022').send({embed:e});
+  bot.channels.get('434608685155614720').send({embed:e});
 
 },
 
@@ -64,7 +64,7 @@ update: function(msgOld, msgNew, bot) {
 
 
 
-    bot.channels.get('432197641271509022').send({embed:e});
+    bot.channels.get('434608641425932288').send({embed:e});
 
   }
 
@@ -94,7 +94,7 @@ join: function(member, bot) {
 
 
 
-  bot.channels.get('432197641271509022').send({embed:e});
+  bot.channels.get('434608588153946123').send({embed:e});
 
 },
 
@@ -116,7 +116,7 @@ leave: function(member, bot) {
 
 
 
-  bot.channels.get('432197641271509022').send({embed:e});
+  bot.channels.get('434608588153946123').send({embed:e});
 
 }
 

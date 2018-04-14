@@ -13,5 +13,6 @@
     "moment": "^2.22.0"
   },
   "devDependencies": {},
-  "description": "FlimeUSBot"
+  "description": "FlimeUSBot",
+  "keywords": []
 }
