@@ -72,7 +72,7 @@ bot.on('guildMemberRemove', member =>{
 
 
 bot.on('message', message => {
-  if (message.content === 'Кинь мою аву') {
+  if (message.content === 'f!avatar') {
     message.reply(message.author.avatarURL);
   }
 });
@@ -122,7 +122,7 @@ if (message.content === 'f!help') {
         "inline": false
       },
       {
-        "name": "Кинь мою аву",
+        "name": "f!avatar",
         "value": "**Бот отправит вам ссылку на вашу аватарку**"
       },
       {
@@ -134,8 +134,8 @@ if (message.content === 'f!help') {
         "value": "Покажет вам ваш уровень и кол-во поинтов"
       },
       {
-        "name": "f!emojiList",
-        "value": "Покажет вам смайлы этого дс"
+        "name": "f!listemojis",
+        "value": "Покажет все смайлы этого сервера"
       }
     ]
   };
@@ -159,16 +159,16 @@ const embed = {
   },
   "fields": [
     {
-      "name": "♡drasert♡",
-      "value": "**Очень хороший человек(Наверное)**"
+      "name": 'Demix(Влад)',
+      "value": "**ПРограммист**"
     },
     {
       "name": "Yamaxila",
-      "value": "Прогруммер"
+      "value": "**Прогруммер**"
     },
     {
       "name": "Iosin",
-      "value": "឵Хз кто឵឵឵឵឵"
+      "value": "**Аднаклзнег(нет)**឵឵឵឵឵"
     }
   ]
 };
@@ -205,4 +205,4 @@ if (message.content.startsWith(`${prefix}random`)) {
   }
 
 });
-bot.login(process.env.BOT_TOKEN)
+bot.login("NDM0NjA3NTMxMDg4OTM2OTYw.Djo9ig.ApTwV6qSoBlChfEEycpqgKa-eQo")
