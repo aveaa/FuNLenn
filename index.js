@@ -84,25 +84,7 @@ bot.on('guildMemberAdd', member => {
 });
 
 bot.on("message", async message => {
-//f!discord
-  if (message.content === 'f!discord') {
 
-    const embed = {
-      "title": "Дискорд в котором меня можно часто увидеть:",
-      "color": 16711680,
-      "footer": {
-        "icon_url": "https://cdn.discordapp.com/attachments/295476460502646784/434605674245259264/x0aerZMZKFM.jpg",
-        "text": "© Воссоздано: FuNLenny"
-      },
-      "fields": [
-        {
-          "name": "The official group by Katalina",
-          "value": "https://discord.gg/QtZw5pU"
-        }
-      ]
-    };
-    message.channel.send({ embed });
-}
 
 
 //f!help
@@ -116,11 +98,6 @@ if (message.content === 'f!help') {
       "text": "© Воссоздано: FuNLenny"
     },
     "fields": [
-      {
-        "name": "f!discord",
-        "value": "**Покажет вам дс в котором я часто сижу**",
-        "inline": false
-      },
       {
         "name": "f!avatar",
         "value": "**Бот отправит вам ссылку на вашу аватарку**"
@@ -205,4 +182,4 @@ if (message.content.startsWith(`${prefix}random`)) {
   }
 
 });
-bot.login("NDM0NjA3NTMxMDg4OTM2OTYw.Djo9ig.ApTwV6qSoBlChfEEycpqgKa-eQo")
+bot.login(process.env.BOT_TOKEN)
