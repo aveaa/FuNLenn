@@ -184,4 +184,4 @@ if (message.content.startsWith(`${prefix}random`)) {
 
 
 });
-bot.login(1)
+bot.login(process.env.BOT_TOKEN)
