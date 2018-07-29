@@ -41,7 +41,25 @@ bot.on("message", message => {
 
 bot.on('ready', () => {
   console.log('Bot on')
-  bot.user.setGame('f!help', 'https://twitch.tv/funnlennysub');
+  static void UpdatePresence()
+  {
+      DiscordRichPresence discordPresence;
+      memset(&discordPresence, 0, sizeof(discordPresence));
+      discordPresence.state = "funlennysub";
+      discordPresence.details = "Competitive";
+      discordPresence.startTimestamp = 1507665886;
+      discordPresence.endTimestamp = 1507665886;
+      discordPresence.largeImageKey = "979c87e5d6c1273a5689bd1327673463_1_png";
+      discordPresence.largeImageText = "funlennysub";
+      discordPresence.smallImageKey = "979c87e5d6c1273a5689bd1327673463_2_png";
+      discordPresence.smallImageText = "f!help";
+      discordPresence.partyId = "ae488379-351d-4a4f-ad32-2b9b01c91657";
+      discordPresence.partySize = 3;
+      discordPresence.partyMax = 3;
+      discordPresence.spectateSecret = "MTIzNDV8MTIzNDV8MTMyNDU0";
+      discordPresence.joinSecret = "MTI4NzM0OjFpMmhuZToxMjMxMjM= ";
+      Discord_UpdatePresence(&discordPresence);
+  }
 });
 
 
@@ -182,25 +200,6 @@ if (message.content.startsWith(`${prefix}random`)) {
   }
 
 
-      static void UpdatePresence()
-      {
-          DiscordRichPresence discordPresence;
-          memset(&discordPresence, 0, sizeof(discordPresence));
-          discordPresence.state = "funlennysub";
-          discordPresence.details = "Competitive";
-          discordPresence.startTimestamp = 1507665886;
-          discordPresence.endTimestamp = 1507665886;
-          discordPresence.largeImageKey = "979c87e5d6c1273a5689bd1327673463_1_png";
-          discordPresence.largeImageText = "funlennysub";
-          discordPresence.smallImageKey = "979c87e5d6c1273a5689bd1327673463_2_png";
-          discordPresence.smallImageText = "f!help";
-          discordPresence.partyId = "ae488379-351d-4a4f-ad32-2b9b01c91657";
-          discordPresence.partySize = 3;
-          discordPresence.partyMax = 3;
-          discordPresence.spectateSecret = "MTIzNDV8MTIzNDV8MTMyNDU0";
-          discordPresence.joinSecret = "MTI4NzM0OjFpMmhuZToxMjMxMjM= ";
-          Discord_UpdatePresence(&discordPresence);
-      }
 
 });
 bot.login(process.env.BOT_TOKEN)
