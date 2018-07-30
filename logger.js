@@ -14,7 +14,7 @@ delete: function(msg, bot) {
 
   .setColor("#ff0000")
 
-  .addField("Пользователь", `${msg.author.tag}`, true)
+  .addField("Пользователь", ``${msg.author.tag}``, true)
 
   .addField("Сервер", msg.guild.name, true)
 
