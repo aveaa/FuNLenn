@@ -14,7 +14,7 @@ delete: function(msg, bot) {
 
   .setColor("#ff0000")
 
-  .addField("Пользователь", ``${msg.author.tag}``, true)
+  .addField("Пользователь", msg.author.tag, true)
 
   .addField("Сервер", msg.guild.name, true)
 
@@ -48,7 +48,7 @@ update: function(msgOld, msgNew, bot) {
 
     let e = new Discord.RichEmbed()
 
-    .setTitle(`${msgOld.author.tag}` + ' изменил сообщение')
+    .setTitle(msgOld.author.tag + ' изменил сообщение')
 
     .setColor("#15f153")
 
@@ -84,7 +84,7 @@ join: function(member, bot) {
 
   let e = new Discord.RichEmbed()
 
-  .setTitle(`${member.user.tag}` + ' зашёл на сервер')
+  .setTitle(member.user.tag + ' зашёл на сервер')
 
   .setColor("#15f153")
 
