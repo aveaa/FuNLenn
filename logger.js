@@ -84,7 +84,7 @@ join: function(member, bot) {
 
   let e = new Discord.RichEmbed()
 
-  .setTitle(member.user.tag + ' зашёл на сервер')
+  .setTitle(`member.user.tag` + ' зашёл на сервер')
 
   .setColor("#15f153")
 
@@ -106,7 +106,7 @@ leave: function(member, bot) {
 
   let e = new Discord.RichEmbed()
 
-  .setTitle(member.user.tag + ' вышел с сервера')
+  .setTitle(`member.user.tag` + ' вышел с сервера')
 
   .setColor("#ff0000")
 
